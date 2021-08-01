@@ -14,8 +14,20 @@ class Credential:
         '''
         Credential.credential_list.append(self)
 
+    @classmethod
     def display_credentials(cls):
         '''
         the method that returns the credentials
         '''
         return cls.credential_list
+
+    @classmethod
+    def delete_credential(cls,account):
+        '''
+        method to delete a credential
+        '''
+        for credential in cls.credential_list:
+            if credential.account_name == account:
+                return credential
+
+    
