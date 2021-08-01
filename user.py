@@ -10,6 +10,6 @@ class User:
 
     def save_user(self):
         '''
-        this is the method that saves a user when they create an account
+        this is the method that saves a user to the user-list when they create an account
         '''
         User.user_list.append(self)
