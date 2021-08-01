@@ -13,3 +13,9 @@ class Credential:
         this method saves the credentials of a user when they create an account
         '''
         Credential.credential_list.append(self)
+
+    def display_credentials(cls):
+        '''
+        the method that returns the credentials
+        '''
+        return cls.credential_list
