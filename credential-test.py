@@ -19,6 +19,13 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_credential.account_name, 'random')
         self.assertEqual(self.new_credential.key,'any')
 
+    def test_save_credentials(self):
+        '''
+        Test case to check whether credentials have been added to credentials list
+        '''
+        self.new_credential.save_credentials()
+        self.assertEqual(len(Credential.credential_list),6)
+
     
     if __name__ == '__main__':
         unittest.main()
