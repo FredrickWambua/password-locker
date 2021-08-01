@@ -18,4 +18,16 @@ def save_credential(credential):
     A function that saves a new credential created
     '''
     credential.save_credential()
+
+def display_credentials():
+    '''
+    A function that displays user credentials
+    '''
+    return  Credential.display_credentials()
+
+def erase_credential(credential):
+    '''
+    A function to delete a credential
+    '''
+    credential.erase_credential()
     
