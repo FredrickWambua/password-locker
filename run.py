@@ -70,7 +70,7 @@ def intro():
     print('Sign up for an account')
 
     while True:
-        print(' Use these shoer codes : cu - Create user, lg - login if user exists, du - display users, q - Quit/ exit the app ')
+        print(' Use these short codes : cu - Create user, lg - login if user exists, du - display users, q - Quit/ exit the app ')
         print('-'*56)
         print('\n')
         short_code = input().lower()
